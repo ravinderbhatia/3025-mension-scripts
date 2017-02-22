@@ -1,0 +1,241 @@
+All mouse hover effect scripts of 3025 Mension project.
+
+1. mouse hover and click event on home link.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class home 
+{
+	public static void main(String[] args)throws  Exception 
+	{
+
+	WebDriver driver = new FirefoxDriver();
+	driver.get("http://www.3025mansion.com"); 
+	WebElement menu = driver.findElement(By.xpath("//a[@href='index.php']"));
+	Actions builder = new Actions(driver);   
+	builder.moveToElement(menu).build().perform();
+	driver.findElement(By.xpath("//a[@href='index.php']")).click();
+}
+}
+========================================================================================================================
+
+2. mouse hover and click event on About-Us link.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class about_us 
+{
+	public static void main(String[] args)throws  Exception 
+	{
+
+	WebDriver driver = new FirefoxDriver();
+	driver.get("http://www.3025mansion.com"); 
+	WebElement menu = driver.findElement(By.xpath("//a[@href='about-us.php']"));
+	Actions builder = new Actions(driver);   
+	builder.moveToElement(menu).build().perform();
+	 driver.findElement(By.xpath("//a[@href='about-us.php']")).click();
+}
+}
+=========================================================================================================================
+
+3.   mouse hover and click event on Lease link.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class hoverclick {
+	public static void main(String[] args)throws  Exception 
+	{
+
+
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://www.3025mansion.com"); 
+		WebElement menu = driver.findElement(By.xpath("//a[@href='#']"));
+		Actions builder = new Actions(driver);   
+		builder.moveToElement(menu).build().perform();
+		driver.findElement(By.id("dropmenu1_a"));
+	    driver.findElement(By.xpath("//a[@href='lease-the-mansion-1.php']")).click();
+	     Thread.sleep(5000);
+	    WebElement menu1 = driver.findElement(By.xpath("//a[@href='#']"));
+		Actions builder1 = new Actions(driver);   
+		builder1.moveToElement(menu1).build().perform();
+		driver.findElement(By.id("dropmenu1_a"));
+	    driver.findElement(By.xpath("//a[@href='lease-3025-mansion.php']")).click();
+		
+		}
+		}
+=============================================================================================================================
+
+4.  mouse hover and click event on Maintainence link.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class maintanace 
+{
+	public static void main(String[] args)throws  Exception 
+	{
+
+	WebDriver driver = new FirefoxDriver();
+	driver.get("http://www.3025mansion.com"); 
+	WebElement menu = driver.findElement(By.xpath("//a[@href='maintenance.php']"));
+	Actions builder = new Actions(driver);   
+	builder.moveToElement(menu).build().perform();
+	driver.findElement(By.xpath("//a[@href='maintenance.php']")).click();
+}
+}
+=============================================================================================================================
+
+5.  mouse hover and click event on Apartments link.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class apartment 
+{
+	public static void main(String[] args)throws  Exception 
+	{
+
+	WebDriver driver = new FirefoxDriver();
+	driver.get("http://www.3025mansion.com"); 
+	WebElement menu = driver.findElement(By.xpath(".//*[@id='colortab']/ul/li[5]/a/span"));
+	Actions builder = new Actions(driver);   
+	builder.moveToElement(menu).build().perform();
+	driver.findElement(By.id("dropmenu3_a"));
+	driver.findElement(By.xpath(".//*[@id='dropmenu3_a']/a[1] ")).click();
+     Thread.sleep(5000);
+     WebElement menu1 = driver.findElement(By.xpath(".//*[@id='colortab']/ul/li[5]/a/span"));
+   Actions builder1 = new Actions(driver);   
+	builder1.moveToElement(menu1).build().perform();
+	driver.findElement(By.id("dropmenu3_a"));
+    driver.findElement(By.xpath(".//*[@id='dropmenu3_a']/a[2]")).click();
+	
+	
+	}
+}
+==============================================================================================================================
+
+6. mouse hover and click event on Moving link.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class moving 
+{
+	public static void main(String[] args)throws  Exception 
+	{
+
+	WebDriver driver = new FirefoxDriver();
+	driver.get("http://www.3025mansion.com"); 
+	WebElement menu = driver.findElement(By.xpath(".//*[@id='colortab']/ul/li[6]/a/span"));
+	Actions builder = new Actions(driver);   
+	builder.moveToElement(menu).build().perform();
+	driver.findElement(By.id("moving_sub"));
+	driver.findElement(By.xpath(".//*[@id='moving_sub']/a[1] ")).click();
+     Thread.sleep(5000);
+     WebElement menu1 = driver.findElement(By.xpath(".//*[@id='colortab']/ul/li[6]/a/span"));
+   Actions builder1 = new Actions(driver);   
+	builder1.moveToElement(menu1).build().perform();
+	driver.findElement(By.id("moving_sub"));
+    driver.findElement(By.xpath(".//*[@id='moving_sub']/a[2]")).click();
+	
+	
+	}
+}
+=====================================================================================================================================
+
+7. mouse hover and click event on Roommate Finder link.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class roommate_finder 
+{
+	public static void main(String[] args)throws  Exception 
+	{
+
+	WebDriver driver = new FirefoxDriver();
+	driver.get("http://www.3025mansion.com"); 
+	WebElement menu = driver.findElement(By.xpath("//a[@href='roommate_finder.php']"));
+	Actions builder = new Actions(driver);   
+	builder.moveToElement(menu).build().perform();
+	 driver.findElement(By.xpath("//a[@href='roommate_finder.php']")).click();
+}
+}
+=====================================================================================================================================
+
+8. mouse hover and click event on Sublease Finder link.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class sublease_finder 
+{
+
+	public static void main(String[] args)throws  Exception 
+	{
+
+	WebDriver driver = new FirefoxDriver();
+	driver.get("http://www.3025mansion.com"); 
+	WebElement menu = driver.findElement(By.xpath("//a[@href='sublease_finder.php']"));
+	Actions builder = new Actions(driver);   
+	builder.moveToElement(menu).build().perform();
+	 driver.findElement(By.xpath("//a[@href='sublease_finder.php']")).click();
+}
+}
+===========================================================================================================================================
+
+9. mouse hover and click event on Neighborhod link.
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class neighborhood 
+{
+
+	public static void main(String[] args)throws  Exception 
+	{
+
+	WebDriver driver = new FirefoxDriver();
+	driver.get("http://www.3025mansion.com"); 
+	WebElement menu = driver.findElement(By.xpath("//a[@href='neighborhood.php']"));
+	Actions builder = new Actions(driver);   
+	builder.moveToElement(menu).build().perform();
+	 driver.findElement(By.xpath("//a[@href='neighborhood.php']")).click();
+}
+
+}
+
+
